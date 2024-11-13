@@ -13,6 +13,12 @@ li {
     border: 1px solid black;
 }
 
+body {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+}
+
 nav {
     font-size: 1.2rem;
     display: grid;
@@ -21,10 +27,51 @@ nav {
     gap: 80px;
     padding-left: 20px;
     padding-top: 20px;
-    border-right: solid black 10px;
+    padding-right: 40px;
+    border-right: 1px solid black;
 }
 
 nav > section:nth-child(n+2) > ul{
     display: grid;
     gap: 15px;
+}
+
+main {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.header-first-row {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.search-bar > input {
+    appearance: none;
+    width: 300px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 8px;
+}
+
+.header-first-row > .user-profile-area {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header-second-row {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header-second-row > .greetings-section {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.header-second-row > ul {
+    display: grid;
+    grid-auto-flow: column;
 }

@@ -7,26 +7,12 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- <header>
-        <section>
-            <div class="search-bar"></div>
-            <div class="small-profile"></div>
-        </section>
-        <section>
-            <div class="big-profile"></div>
-            <ul>
-                <li>New</li>
-                <li>Upload</li>
-                <li>Share</li>
-            </ul>
-        </section>
-    </header> -->
     <nav>
-        <section class="first-nav-section">
+        <div class="nav-first-section">
             <span class="img-placeholder">img</span>
             <span>Dashboard</span>
-        </section>
-        <section class="second-nav-section">
+        </div>
+        <div class="nav-second-section">
             <ul>
                 <li>Home</li>
                 <li>Profile</li>
@@ -35,17 +21,45 @@
                 <li>Tasks</li>
                 <li>Communities</li>
             </ul>
-        </section>
-        <section class="third-nav-section">
+        </div>
+        <div class="nav-third-section">
             <ul>
                 <li>Settings</li>
                 <li>Support</li>
                 <li>Privacy</li>
             </ul>
-        </section>
+        </div>
     </nav>
+    <main>
+        <header>
+            <div class="header-first-row">
+                <div class="search-bar" role="search">
+                    <i class="magnifier">mag</i>
+                    <input aria-label="search term">
+                </div>
+                <div class="user-profile-area">
+                    <span class="notifications">notif</span>
+                    <span class="profile-photo">pp</span>
+                    <p class="user-profile-name">Morgan Oakley</p>
+                </div>
+            </div>
+            <div class="header-second-row">
+                <div class="greetings-section">
+                    <span class="big-profile-photo">Big</span>
+                    <div class="greetings-user">
+                        <p>Hi there,</p>
+                        <p>Morgan Oakley (@morgan)</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>New</li>
+                    <li>Upload</li>
+                    <li>Share</li>
+                </ul>
+            </div>
+        </header>
     <!-- <article>
-        <section>
+        <div>
             <p>Your Projects</p>
             <div class="cards-container">
                 <div class="card"></div>
@@ -55,16 +69,16 @@
                 <div class="card"></div>
                 <div class="card"></div>
             </div>
-        </section>
-        <section>
+        </div>
+        <div>
             <p>Announcements</p>
             <div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-        </section>
-        <section>
+        </div>
+        <div>
             <p>Trending</p>
             <div>
                 <div></div>
@@ -72,7 +86,8 @@
                 <div></div>
                 <div></div>
             </div>
-        </section>
+        </div>
     </article> -->
+    </main>
 </body>
 </html>
