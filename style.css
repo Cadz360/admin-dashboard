@@ -31,14 +31,18 @@ nav {
     border-right: 1px solid black;
 }
 
-nav > section:nth-child(n+2) > ul{
+nav > div:nth-child(n+2) > ul{
     display: grid;
     gap: 15px;
 }
 
 main {
-    padding-left: 20px;
     padding-top: 20px;
+    width: 100%;
+}
+
+header > div {
+    padding-left: 20px;
 }
 
 .header-first-row {
@@ -48,7 +52,7 @@ main {
 
 .search-bar > input {
     appearance: none;
-    width: 300px;
+    width: 500px;
     border-radius: 20px;
     padding: 5px 10px;
     margin-left: 8px;
@@ -57,11 +61,16 @@ main {
 .header-first-row > .user-profile-area {
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: auto auto 1fr;
+    gap: 20px;
 }
 
 .header-second-row {
     display: grid;
     grid-auto-flow: column;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
 }
 
 .header-second-row > .greetings-section {
@@ -71,7 +80,16 @@ main {
     gap: 10px;
 }
 
-.header-second-row > ul {
+.header-second-row > .btns {
     display: grid;
     grid-auto-flow: column;
+    gap: 15px;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+.btns > button {
+    border-radius: 10px;
+    padding: 3px 0px;
 }
