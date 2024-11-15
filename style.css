@@ -132,8 +132,17 @@ article {
     padding-right: 20px;
 }
 
+.article-right-column {
+    display: grid;
+    gap: 15px;
+}
+
 .article-right-column > div {
     margin-right: 30px;
+}
+
+.article-right-column > div > div {
+    margin-top: 15px;
 }
 
 .annoucements-container {
@@ -149,3 +158,17 @@ article {
     padding-bottom: 10px;
 }
 
+.trending-apps-container {
+    display: grid;
+    gap: 15px;
+    border: 1px solid black;
+}
+
+.trending-apps-container > .trending-app {
+    padding: 25px 25px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
