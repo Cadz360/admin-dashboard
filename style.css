@@ -101,11 +101,13 @@ article {
     padding-left: 20px;
     padding-top: 20px;
     display: grid;
+    grid-template-columns: auto 1fr;
     grid-auto-flow: column;
+    gap: 20px;
 }
 
 .projects-container {
-    width: 60vw;
+    width: 50vw;
 }
 
 .projects {
@@ -129,3 +131,21 @@ article {
     color: rgba(0, 0, 0, 0.50);
     padding-right: 20px;
 }
+
+.article-right-column > div {
+    margin-right: 30px;
+}
+
+.annoucements-container {
+    padding: 25px 25px;
+    padding-bottom: 35px;
+    border: 1px solid black;
+    display: grid;
+    gap: 25px;
+}
+
+.announcement {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.245);
+    padding-bottom: 10px;
+}
+
