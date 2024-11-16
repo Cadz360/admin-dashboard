@@ -8,9 +8,26 @@ li {
     list-style: none;
 }
 
-.img-placeholder {
-    padding: 10px;
-    border: 1px solid black;
+.dashboard-icon {
+    width: 40px;
+}
+
+.nav-first-section {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.nav-btn-icon {
+    width: 20px;
+}
+
+nav > div:nth-child(n + 2) > ul > li {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    align-items: center;
 }
 
 body {
