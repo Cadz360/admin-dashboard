@@ -69,6 +69,16 @@ header > div {
     padding-right: 40px;
 }
 
+.search-bar {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.magnifiying-glass-icon {
+    width: 25px;
+}
+
 .search-bar > input {
     appearance: none;
     width: 500px;
@@ -80,8 +90,25 @@ header > div {
 .header-first-row > .user-profile-area {
     display: grid;
     grid-auto-flow: column;
+    align-items: center;
     grid-template-columns: auto auto 1fr;
     gap: 20px;
+}
+
+.notification-icon {
+    width: 25px;
+}
+
+.profile-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.big {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .header-second-row {
@@ -97,6 +124,7 @@ header > div {
 .header-second-row > .greetings-section {
     display: grid;
     grid-auto-flow: column;
+    align-items: center;
     grid-template-columns: auto 1fr;
     gap: 10px;
 }
@@ -104,14 +132,13 @@ header > div {
 .header-second-row > .btns {
     display: grid;
     grid-auto-flow: column;
-    gap: 15px;
-    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
     align-items: center;
 }
 
 .btns > button {
     border-radius: 10px;
-    padding: 3px 0px;
+    padding: 8px 40px;
 }
 
 article {
