@@ -183,6 +183,9 @@ article {
     padding-top: 10px;
     align-self: end;
     justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
 }
 
 .project-btns > button {
@@ -234,7 +237,7 @@ article {
 }
 
 .trending-apps-container > .trending-app {
-    padding: 5px 5px;
+    padding: 7px 30px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 1fr;
