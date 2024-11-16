@@ -158,17 +158,24 @@ article {
     padding-bottom: 10px;
 }
 
+.announcement > h4 {
+    font-size: 0.9rem;
+}
+
+.announcement > p {
+    font-size: 0.8rem;
+}
+
 .trending-apps-container {
     display: grid;
-    gap: 15px;
     border: 1px solid black;
 }
 
 .trending-apps-container > .trending-app {
-    padding: 25px 25px;
+    padding: 5px 5px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
